@@ -1,0 +1,19 @@
+server:
+  port: 8088
+  servlet:
+    path: /
+
+logging:
+  level:
+    cn.itcast: debug  #控制某个包下的打印日志级别
+   #org.springframework: debu
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/yun6
+    username: root
+    password: root
+mybatis:
+    type-aliases-package: cn,itcast.pojo
+    #mapper-locations: mapper/*.xml
